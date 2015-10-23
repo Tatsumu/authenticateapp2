@@ -2,3 +2,7 @@
 
 <p><%= link_to "登録", signup_path %>
 <p><%= link_to "ログイン", signin_path %>
+
+<% if current_user %>
+  <p><%= current_user.email %></p>
+<% end %>
